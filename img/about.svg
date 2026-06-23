@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#E1F5EE" rx="16"/>
+  <!-- Decorative background shapes -->
+  <circle cx="100" cy="100" r="200" fill="#1D9E75" opacity="0.1" />
+  <circle cx="700" cy="500" r="150" fill="#0F6E56" opacity="0.15" />
+  
+  <!-- Illustration of hands and heart (representing care and motherly trust) -->
+  <g transform="translate(400, 280)">
+    <!-- Heart shape representing care -->
+    <path d="M 0 -110 C -60 -170, -150 -110, -150 -40 C -150 40, -40 100, 0 160 C 40 100, 150 40, 150 -40 C 150 -110, 60 -170, 0 -110 Z" fill="#0F6E56" opacity="0.9" />
+    <path d="M 0 -100 C -50 -150, -130 -100, -130 -40 C -130 30, -30 90, 0 140 C 30 90, 130 30, 130 -40 C 130 -100, 50 -150, 0 -100 Z" fill="#1D9E75" opacity="0.4" />
+    
+    <!-- Mother & Child Abstract Silhouette inside Heart -->
+    <path d="M -30 -30 C -30 -45 -15 -45 -15 -30 C -15 -15 -30 -15 -30 -30 Z" fill="#FFFFFF" />
+    <path d="M -45 20 C -45 -5 -15 -5 -15 20 Z" fill="#FFFFFF" />
+    
+    <path d="M 15 -10 C 15 -20 25 -20 25 -10 C 25 0 15 0 15 -10 Z" fill="#FFFFFF" />
+    <path d="M 5 25 C 5 10 35 10 35 25 Z" fill="#FFFFFF" />
+    
+    <!-- Caring hands wrapping around -->
+    <path d="M -180 50 C -120 100, -60 120, 0 120 C 60 120, 120 100, 180 50 C 150 120, 70 140, 0 140 C -70 140, -150 120, -180 50 Z" fill="#FFFFFF" opacity="0.9" />
+  </g>
+  
+  <!-- Text Overlay -->
+  <text x="400" y="520" text-anchor="middle" font-family="'Inter', sans-serif" font-size="28" font-weight="700" fill="#0F6E56">MY MOTHER TRUST</text>
+  <text x="400" y="555" text-anchor="middle" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#1D9E75">Serving Patients &amp; Empowering Communities Since 2021</text>
+</svg>

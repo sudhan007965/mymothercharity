@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - MY MOTHER TRUST</title>
+  
+  <meta name="description" content="Learn about our mission, Mrs. K. Kalaiselvi, and our Board of Trustees steering MY MOTHER TRUST in Thiruvarur, Tamil Nadu.">
+  <meta name="keywords" content="NGO, About, Trustees, Thiruvarur, Kalaiselvi, Charity Board">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230F6E56%22/><text x=%2250%25%22 y=%2257%25%22 font-family=%22Inter, sans-serif%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>M</text></svg>">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Fallback Mode Banner -->
+  <div id="fallback-banner" class="fallback-banner">
+    Running in Local Demo Mode (Database & Storage Not Connected). <a href="admin.html" style="text-decoration: underline; color: inherit;">Go to Admin Portal</a>
+  </div>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-dot"></span>
+        <span data-tr="brand_name">MY MOTHER TRUST</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" data-tr="nav_home">Home</a></li>
+          <li><a href="about.html" class="nav-link active" data-tr="nav_about">About Us</a></li>
+          <li><a href="programs.html" class="nav-link" data-tr="nav_programs">Programs</a></li>
+          <li><a href="gallery.html" class="nav-link" data-tr="nav_gallery">Gallery</a></li>
+          <li><a href="donate.html" class="nav-link" data-tr="nav_donate">Donate</a></li>
+          <li><a href="contact.html" class="nav-link" data-tr="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-toggle">
+          <i data-lucide="languages" style="width: 16px; height: 16px;"></i>
+          <span id="lang-text">EN | த</span>
+        </button>
+        <a href="donate.html" class="btn btn-primary btn-sm" data-tr="cta_donate">Donate Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HEADER BANNER -->
+  <div class="hero" style="padding: 4.5rem 0 3.5rem 0;">
+    <div class="container">
+      <h1 data-tr="nav_about" style="font-size: 2.5rem; margin-bottom: 0;">About Us</h1>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <img src="img/about.svg" alt="MY MOTHER TRUST Care Illustration">
+        </div>
+        
+        <div class="about-content" data-aos="fade-left">
+          <h2 data-tr="about_title">MY MOTHER TRUST</h2>
+          <p class="about-p" data-tr="about_p1">MY MOTHER TRUST is a registered non-governmental organization (NGO) established in 2021 in Thiruvarur, Tamil Nadu. Our primary mission is to offer hope and healing to individuals suffering from chronic and viral diseases, specifically cancer, AIDS, and other communicable viral infections.</p>
+          <p class="about-p" data-tr="about_p2">In addition to health care, we actively promote medical camps, environment drives, and career guidance. We are committed to fostering women's empowerment through vocational training and offering educational materials to children in rural government schools.</p>
+          
+          <div class="about-bullets">
+            <div class="bullet-item">
+              <div class="bullet-icon"><i data-lucide="heart-pulse"></i></div>
+              <span class="bullet-text" data-tr="about_bullet1">Medical Assistance &amp; Patient Rehabilitation</span>
+            </div>
+            <div class="bullet-item">
+              <div class="bullet-icon"><i data-lucide="graduation-cap"></i></div>
+              <span class="bullet-text" data-tr="about_bullet2">Educational Support &amp; Youth Guidance</span>
+            </div>
+            <div class="bullet-item">
+              <div class="bullet-icon"><i data-lucide="users"></i></div>
+              <span class="bullet-text" data-tr="about_bullet3">Community Empowerment &amp; Environmental Protection</span>
+            </div>
+          </div>
+          
+          <div class="founder-card">
+            <div class="founder-avatar">KK</div>
+            <div class="founder-info">
+              <h4 data-tr="founder_name">Mrs. K. Kalaiselvi, B.Pharm.</h4>
+              <p data-tr="founder_title">Managing Trustee &amp; Chairperson</p>
+              <p style="font-size: 0.8rem;" data-tr="founder_exp">4+ years of dedicated social work experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOARD OF TRUSTEES TABLE -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-tr="trustees_heading">Board of Trustees</h2>
+        <p data-tr="trustees_subheading">Our administrative board steering the mission with accountability and transparency.</p>
+      </div>
+      
+      <div class="table-container" data-aos="fade-up">
+        <table class="trustees-table">
+          <thead>
+            <tr>
+              <th data-tr="th_sn">S/N</th>
+              <th data-tr="th_name">Name</th>
+              <th data-tr="th_age">Age</th>
+              <th data-tr="th_sex">Sex</th>
+              <th data-tr="th_occ">Occupation</th>
+              <th data-tr="th_desg">Designation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mrs. K. Kalaiselvi</td>
+              <td>31</td>
+              <td data-tr="val_female">Female</td>
+              <td data-tr="occ_pharmacist">Private Pharmacist</td>
+              <td class="designation-cell" data-tr="desg_chairman">Managing Trustee cum Chairman</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mr. G. Karunanidhi</td>
+              <td>63</td>
+              <td data-tr="val_male">Male</td>
+              <td data-tr="occ_agri">Agriculture</td>
+              <td class="designation-cell" data-tr="desg_treasurer">Financial Trustee cum Treasurer</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mr. K. Venkateshkumar</td>
+              <td>37</td>
+              <td data-tr="val_male">Male</td>
+              <td data-tr="occ_reporter">TV News Reporter</td>
+              <td class="designation-cell" data-tr="desg_trustee">Trustee</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mr. K. Rajavel</td>
+              <td>32</td>
+              <td data-tr="val_male">Male</td>
+              <td data-tr="occ_agri">Agriculture</td>
+              <td class="designation-cell" data-tr="desg_trustee">Trustee</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING CONTROLS -->
+  <div class="floating-actions">
+    <a href="https://api.whatsapp.com/send?phone=+917094202363" target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+      <i data-lucide="phone-call" style="margin-top: 2px;"></i>
+    </a>
+    <button class="float-btn float-backtop" id="btn-backtop" aria-label="Back to Top">
+      <i data-lucide="chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">
+          <span class="logo-dot"></span>
+          <span data-tr="brand_name">MY MOTHER TRUST</span>
+        </div>
+        <p class="footer-desc" data-tr="footer_desc">We are committed to providing healthcare aid to patients suffering from cancer, AIDS, and viral diseases, along with educational support and ecological preservation in Thiruvarur, Tamil Nadu.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="footer-title" data-tr="footer_quick_links">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-tr="nav_home">Home</a></li>
+          <li><a href="about.html" data-tr="nav_about">About Us</a></li>
+          <li><a href="programs.html" data-tr="nav_programs">Programs</a></li>
+          <li><a href="gallery.html" data-tr="nav_gallery">Gallery</a></li>
+          <li><a href="donate.html" data-tr="nav_donate">Donate</a></li>
+          <li><a href="contact.html" data-tr="nav_contact">Contact</a></li>
+          <li><a href="admin.html" style="font-weight: 600; color: var(--accent);" data-tr="footer_admin_link">Admin Portal</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="footer-title" data-tr="info_address">Office Address</h4>
+        <div class="footer-address">
+          <div class="footer-address-item">
+            <i data-lucide="map-pin" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
+            <span data-tr="address_val">Door No 2/166A, Royal City Nagar, Pulivalam P.O., Thiruvarur District, Tamil Nadu - 610109</span>
+          </div>
+          <div class="footer-address-item">
+            <i data-lucide="phone" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
+            <span>+91 70942 02363</span>
+          </div>
+          <div class="footer-address-item">
+            <i data-lucide="mail" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
+            <span>mymothercharitabletrust@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-tr="copyright">© 2024 MY MOTHER TRUST. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Supabase CDN Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Config File -->
+  <script src="config.js"></script>
+  
+  <!-- Main Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

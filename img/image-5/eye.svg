@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#FFFFFF" />
+  <rect width="560" height="410" x="20" y="20" fill="#E1F5EE" rx="8" />
+  <circle cx="300" cy="200" r="80" fill="#0F6E56" opacity="0.1" />
+  
+  <!-- Eye illustration with medical cross -->
+  <g transform="translate(300, 200)">
+    <!-- Eye Outline -->
+    <path d="M -100 0 C -40 -60, 40 -60, 100 0 C 40 60, -40 60, -100 0 Z" fill="none" stroke="#0F6E56" stroke-width="6" stroke-linecap="round" />
+    <!-- Pupil/Iris -->
+    <circle cx="0" cy="0" r="35" fill="#1D9E75" />
+    <circle cx="0" cy="0" r="15" fill="#0F6E56" />
+    <circle cx="-8" cy="-8" r="6" fill="#FFFFFF" />
+    
+    <!-- Medical Cross -->
+    <path d="M 90 -60 L 110 -60 L 110 -80 L 130 -80 L 130 -60 L 150 -60 L 150 -40 L 130 -40 L 130 -20 L 110 -20 L 110 -40 L 90 -40 Z" fill="#0F6E56" />
+  </g>
+  
+  <text x="300" y="340" text-anchor="middle" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#0F6E56">Free Eye Camp</text>
+  <text x="300" y="370" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#1D9E75">Diagnostic &amp; Cataract Screening</text>
+</svg>

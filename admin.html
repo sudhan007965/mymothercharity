@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal - MY MOTHER TRUST</title>
+  
+  <!-- Favicon (SVG M-logo in green circle) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230F6E56%22/><text x=%2250%25%22 y=%2257%25%22 font-family=%22Inter, sans-serif%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>M</text></svg>">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+  <!-- Fallback Warning Banner -->
+  <div id="fallback-banner" class="fallback-banner">
+    Running in Local Demo Mode (Database Not Connected). Use Email: <strong>admin@charity.org</strong> | Password: <strong>password123</strong> to log in.
+  </div>
+
+  <!-- LOGIN CARD CONTAINER -->
+  <div class="admin-login-container" id="login-container">
+    <div class="admin-login-card">
+      <div class="admin-login-header">
+        <a href="index.html" class="logo">
+          <span class="logo-dot"></span>
+          <span>MY MOTHER TRUST</span>
+        </a>
+        <h2>Administrative Portal</h2>
+        <p>Log in to upload and manage trust gallery photos</p>
+      </div>
+      
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-control" placeholder="Enter your registered email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem;" id="btn-login">Log In</button>
+      </form>
+      
+      <div style="margin-top: 1.5rem; text-align: center;">
+        <a href="index.html" style="font-size: 0.9rem; color: var(--primary); font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
+          <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i> Back to Website
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD WRAPPER -->
+  <div class="admin-dashboard" id="dashboard-container">
+    <div class="container">
+      
+      <!-- Top header bar -->
+      <div class="admin-header-bar">
+        <div class="admin-header-title">
+          <a href="index.html" class="logo" style="margin-bottom: 0.25rem;">
+            <span class="logo-dot"></span>
+            <span>MY MOTHER TRUST</span>
+          </a>
+          <h2>Gallery Management Dashboard</h2>
+        </div>
+        <div class="admin-user-info">
+          <span class="admin-user-email" id="admin-user-email">admin@charity.org</span>
+          <button class="btn btn-white" id="btn-logout" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+            <i data-lucide="log-out" style="width: 16px; height: 16px; margin-right: 0.25rem;"></i> Log Out
+          </button>
+        </div>
+      </div>
+      
+      <!-- Dashboard Grid -->
+      <div class="admin-grid">
+        
+        <!-- Left: Upload Card -->
+        <div class="admin-card">
+          <h3>Upload New Photo</h3>
+          <form id="upload-form">
+            <div class="form-group">
+              <label for="photo-file">Select Image File</label>
+              <input type="file" id="photo-file" class="form-control" accept="image/*" required style="padding: 0.5rem;">
+            </div>
+            
+            <div class="form-group">
+              <label for="photo-category">Event Category</label>
+              <select id="photo-category" class="form-control" required>
+                <option value="" disabled selected>Choose a category</option>
+                <option value="blood">Blood Donation</option>
+                <option value="cancer">Cancer Awareness</option>
+                <option value="eye">Eye Camp</option>
+                <option value="sapling">Sapling Drive</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="photo-caption">Caption / Description</label>
+              <textarea id="photo-caption" class="form-control" placeholder="Enter photo description" required style="min-height: 80px;"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem;" id="btn-upload">
+              <i data-lucide="upload-cloud" style="width: 18px; height: 18px; margin-right: 0.5rem;"></i> Upload to Gallery
+            </button>
+          </form>
+        </div>
+        
+        <!-- Right: Manage Photos Card -->
+        <div class="admin-card">
+          <h3>Manage Gallery Photos</h3>
+          <div class="admin-photos-list" id="admin-photos-list">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Supabase CDN Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Config File -->
+  <script src="config.js"></script>
+  
+  <!-- Admin Script Logic -->
+  <script src="admin.js"></script>
+</body>
+</html>

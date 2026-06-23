@@ -1,0 +1,8 @@
+{
+  "name": "my-mother-charity",
+  "version": "1.0.0",
+  "description": "MY MOTHER TRUST Website",
+  "scripts": {
+    "dev": "npx -y http-server -p 5000"
+  }
+}
