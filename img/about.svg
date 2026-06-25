@@ -1,27 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
-  <rect width="800" height="600" fill="#E1F5EE" rx="16"/>
-  <!-- Decorative background shapes -->
-  <circle cx="100" cy="100" r="200" fill="#1D9E75" opacity="0.1" />
-  <circle cx="700" cy="500" r="150" fill="#0F6E56" opacity="0.15" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <!-- Definitions for Gradients -->
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f2f7f5"/>
+      <stop offset="100%" stop-color="#dcebe5"/>
+    </radialGradient>
+    <linearGradient id="orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8f3d"/>
+      <stop offset="100%" stop-color="#f15a24"/>
+    </linearGradient>
+    <linearGradient id="body-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff7b1a"/>
+      <stop offset="100%" stop-color="#e64a00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Background Card -->
+  <rect x="0" y="0" width="600" height="600" fill="#003d27" rx="24"/>
   
-  <!-- Illustration of hands and heart (representing care and motherly trust) -->
-  <g transform="translate(400, 280)">
-    <!-- Heart shape representing care -->
-    <path d="M 0 -110 C -60 -170, -150 -110, -150 -40 C -150 40, -40 100, 0 160 C 40 100, 150 40, 150 -40 C 150 -110, 60 -170, 0 -110 Z" fill="#0F6E56" opacity="0.9" />
-    <path d="M 0 -100 C -50 -150, -130 -100, -130 -40 C -130 30, -30 90, 0 140 C 30 90, 130 30, 130 -40 C 130 -100, 50 -150, 0 -100 Z" fill="#1D9E75" opacity="0.4" />
-    
-    <!-- Mother & Child Abstract Silhouette inside Heart -->
-    <path d="M -30 -30 C -30 -45 -15 -45 -15 -30 C -15 -15 -30 -15 -30 -30 Z" fill="#FFFFFF" />
-    <path d="M -45 20 C -45 -5 -15 -5 -15 20 Z" fill="#FFFFFF" />
-    
-    <path d="M 15 -10 C 15 -20 25 -20 25 -10 C 25 0 15 0 15 -10 Z" fill="#FFFFFF" />
-    <path d="M 5 25 C 5 10 35 10 35 25 Z" fill="#FFFFFF" />
-    
-    <!-- Caring hands wrapping around -->
-    <path d="M -180 50 C -120 100, -60 120, 0 120 C 60 120, 120 100, 180 50 C 150 120, 70 140, 0 140 C -70 140, -150 120, -180 50 Z" fill="#FFFFFF" opacity="0.9" />
+  <!-- Middle Section (White / Light Teal) -->
+  <rect x="0" y="130" width="600" height="395" fill="url(#bg-grad)" />
+
+  <!-- Background Decorative Curved Paths (Teal Waves) -->
+  <!-- Left Wave -->
+  <path d="M 0 130 Q 80 220 0 350 L 0 130 Z" fill="#0d6f4d" opacity="0.08" />
+  <path d="M 0 250 Q 120 380 0 525 L 0 250 Z" fill="#0d6f4d" opacity="0.05" />
+  
+  <!-- Right Wave -->
+  <path d="M 600 130 Q 520 220 600 350 L 600 130 Z" fill="#0d6f4d" opacity="0.08" />
+  <path d="M 600 250 Q 480 380 600 525 L 600 250 Z" fill="#0d6f4d" opacity="0.05" />
+
+  <!-- Top Section Content -->
+  <!-- Reg No Ornament -->
+  <line x1="170" y1="38" x2="230" y2="38" stroke="#8cb9a8" stroke-width="1.2" />
+  <circle cx="235" cy="38" r="2.5" fill="#ff791a" />
+  <text x="300" y="42" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="1" fill="#ffffff">REG NO: 50/2021</text>
+  <circle cx="365" cy="38" r="2.5" fill="#ff791a" />
+  <line x1="370" y1="38" x2="430" y2="38" stroke="#8cb9a8" stroke-width="1.2" />
+
+  <!-- Tamil Heading: மை மதர் -->
+  <text x="300" y="102" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" letter-spacing="1" fill="#ff791a">மை மதர்</text>
+
+  <!-- Middle Section Content -->
+  <!-- Concentric Rings -->
+  <circle cx="300" cy="245" r="76" fill="none" stroke="#003d27" stroke-width="1.5" />
+  <circle cx="300" cy="245" r="68" fill="none" stroke="#003d27" stroke-width="1" />
+  
+  <!-- Dots on Rings -->
+  <!-- Left/Right (Green) -->
+  <circle cx="224" cy="245" r="3.5" fill="#0d6f4d" />
+  <circle cx="376" cy="245" r="3.5" fill="#0d6f4d" />
+  <!-- Diagonal Dots (Orange) -->
+  <circle cx="248" cy="193" r="3" fill="#ff791a" />
+  <circle cx="352" cy="193" r="3" fill="#ff791a" />
+  <circle cx="248" cy="297" r="3" fill="#ff791a" />
+  <circle cx="352" cy="297" r="3" fill="#ff791a" />
+
+  <!-- Person Icon -->
+  <!-- Head -->
+  <circle cx="300" cy="198" r="21" fill="url(#orange-grad)" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.15))" />
+  <!-- Body (Hexagon) -->
+  <polygon points="300,233 342,248 342,298 300,313 258,298 258,248" fill="url(#body-grad)" filter="drop-shadow(0px 3px 4px rgba(0,0,0,0.15))" />
+  <!-- White cutout sphere inside the body -->
+  <circle cx="321" cy="280" r="13" fill="#ffffff" />
+  <circle cx="323" cy="281" r="10" fill="url(#orange-grad)" />
+
+  <!-- Divider Line with Center Circle -->
+  <line x1="124" y1="365" x2="476" y2="365" stroke="#003d27" stroke-width="1.2" />
+  <circle cx="300" cy="365" r="3" fill="#003d27" />
+
+  <!-- Tamil Text: தொண்டு நிறுவனம் -->
+  <text x="300" y="394" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="600" letter-spacing="0.5" fill="#003d27">தொண்டு நிறுவனம்</text>
+
+  <!-- Floral Leaf Flourish -->
+  <g fill="#003d27" transform="translate(300, 416)">
+    <!-- Left leaf -->
+    <path d="M 0 0 C -8 -4, -16 -2, -20 2 C -12 2, -6 0, 0 0 Z" />
+    <!-- Right leaf -->
+    <path d="M 0 0 C 8 -4, 16 -2, 20 2 C 12 2, 6 0, 0 0 Z" />
+    <!-- Center leaf -->
+    <path d="M 0 0 C -2 -8, 0 -14, 0 -18 C 0 -14, 2 -8, 0 0 Z" />
+    <!-- Small dots -->
+    <circle cx="-10" cy="-3" r="1.5" />
+    <circle cx="10" cy="-3" r="1.5" />
   </g>
+
+  <!-- Thick Divider Line -->
+  <line x1="142" y1="428" x2="458" y2="428" stroke="#003d27" stroke-width="4.5" stroke-linecap="round" />
+
+  <!-- English Text: MY MOTHER TRUST -->
+  <text x="300" y="478" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="34" font-weight="bold" letter-spacing="2" fill="#003d27">MY MOTHER</text>
+  <text x="300" y="506" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="18" font-weight="bold" letter-spacing="7" fill="#003d27">TRUST</text>
+  <!-- Thin lines flanking TRUST -->
+  <line x1="175" y1="500" x2="230" y2="500" stroke="#003d27" stroke-width="1.2" />
+  <line x1="370" y1="500" x2="425" y2="500" stroke="#003d27" stroke-width="1.2" />
+
+  <!-- Bottom Section Content -->
+  <!-- Slogan -->
+  <text x="300" y="552" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="4" fill="#ffffff">MAKING A DIFFERENCE TODAY</text>
   
-  <!-- Text Overlay -->
-  <text x="400" y="520" text-anchor="middle" font-family="'Inter', sans-serif" font-size="28" font-weight="700" fill="#0F6E56">MY MOTHER TRUST</text>
-  <text x="400" y="555" text-anchor="middle" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#1D9E75">Serving Patients &amp; Empowering Communities Since 2021</text>
+  <!-- Colored Dots -->
+  <circle cx="240" cy="576" r="4.5" fill="#0d6f4d" />
+  <circle cx="270" cy="576" r="4.5" fill="#58b387" />
+  <circle cx="300" cy="576" r="4.5" fill="#ffffff" />
+  <circle cx="330" cy="576" r="4.5" fill="#58b387" />
+  <circle cx="360" cy="576" r="4.5" fill="#0d6f4d" />
 </svg>
