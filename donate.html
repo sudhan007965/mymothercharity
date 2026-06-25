@@ -12,7 +12,7 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230F6E56%22/><text x=%2250%25%22 y=%2257%25%22 font-family=%22Inter, sans-serif%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>M</text></svg>">
 
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1.2">
   
   <!-- AOS (Animate on Scroll) CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -80,54 +80,34 @@
         </div>
         
         <div class="donation-box">
-          <!-- Preset buttons -->
-          <div class="donation-presets">
-            <button class="preset-btn" data-val="500">₹500</button>
-            <button class="preset-btn active" data-val="1000">₹1,000</button>
-            <button class="preset-btn" data-val="2500">₹2,500</button>
-            <button class="preset-btn" data-val="5000">₹5,000</button>
-          </div>
-          
-          <!-- Custom Input -->
-          <div class="custom-donation">
-            <div class="input-group">
-              <span class="input-prefix">₹</span>
-              <input type="number" id="donation-amount" value="1000" min="10" placeholder="Enter custom amount">
-            </div>
-          </div>
-          
-          <button class="btn btn-primary btn-submit" id="btn-donate-submit" data-tr="donate_now_btn">Donate Now</button>
-          
-          <!-- Bank accordion -->
-          <div class="accordion">
-            <div class="accordion-header" id="bank-accordion-toggle">
+          <!-- Bank Transfer & QR Details -->
+          <div class="bank-details-container">
+            <div class="bank-info-header">
+              <i data-lucide="wallet" style="color: var(--primary); width: 20px; height: 20px;"></i>
               <span data-tr="bank_details_title">View Bank Account Details</span>
-              <i data-lucide="chevron-down" id="accordion-arrow" style="transition: var(--transition);"></i>
             </div>
-            <div class="accordion-content" id="bank-accordion-content">
-              <div class="accordion-body">
-                <div class="bank-info">
-                  <div class="bank-row">
-                    <span class="bank-label" data-tr="bank_name">Bank</span>
-                    <span class="bank-val">Union Bank of India</span>
-                  </div>
-                  <div class="bank-row">
-                    <span class="bank-label" data-tr="bank_branch">Branch</span>
-                    <span class="bank-val">Thiruvarur Branch</span>
-                  </div>
-                  <div class="bank-row">
-                    <span class="bank-label" data-tr="bank_ac">A/C No</span>
-                    <span class="bank-val" style="letter-spacing: 0.05em;">2396110000007</span>
-                  </div>
-                  <div class="bank-row">
-                    <span class="bank-label" data-tr="bank_ifsc">IFSC Code</span>
-                    <span class="bank-val">UBIN0551155</span>
-                  </div>
+            <div class="bank-details-body">
+              <div class="bank-info">
+                <div class="bank-row">
+                  <span class="bank-label" data-tr="bank_name">Bank</span>
+                  <span class="bank-val">Union Bank of India</span>
                 </div>
-                <div class="qr-container">
-                  <img src="img/qr-code.svg" alt="Scan to Donate QR Code">
-                  <div class="qr-label" data-tr="scan_to_donate">Scan to Donate</div>
+                <div class="bank-row">
+                  <span class="bank-label" data-tr="bank_branch">Branch</span>
+                  <span class="bank-val">Thiruvarur Branch</span>
                 </div>
+                <div class="bank-row">
+                  <span class="bank-label" data-tr="bank_ac">A/C No</span>
+                  <span class="bank-val" style="letter-spacing: 0.05em;">2396110000007</span>
+                </div>
+                <div class="bank-row">
+                  <span class="bank-label" data-tr="bank_ifsc">IFSC Code</span>
+                  <span class="bank-val">UBIN0551155</span>
+                </div>
+              </div>
+              <div class="qr-container">
+                <img src="img/qr-code.jpg" alt="Scan to Donate QR Code">
+                <div class="qr-label" data-tr="scan_to_donate">Scan to Donate</div>
               </div>
             </div>
           </div>

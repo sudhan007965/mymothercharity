@@ -544,21 +544,25 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("active");
       
       const val = btn.getAttribute("data-val");
-      amountInput.value = val;
+      if (amountInput) {
+        amountInput.value = val;
+      }
     });
   });
   
   // Input sync with presets
-  amountInput.addEventListener("input", () => {
-    const val = amountInput.value;
-    presetButtons.forEach(b => b.classList.remove("active"));
-    
-    presetButtons.forEach(b => {
-      if (b.getAttribute("data-val") === val) {
-        b.classList.add("active");
-      }
+  if (amountInput) {
+    amountInput.addEventListener("input", () => {
+      const val = amountInput.value;
+      presetButtons.forEach(b => b.classList.remove("active"));
+      
+      presetButtons.forEach(b => {
+        if (b.getAttribute("data-val") === val) {
+          b.classList.add("active");
+        }
+      });
     });
-  });
+  }
   
   // Bank accordion toggle
   if (accordionToggle) {
