@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programs - MY MOTHER TRUST</title>
-  
-  <meta name="description" content="Explore our impact initiatives in cancer support, AIDS awareness, eye camps, tree planting, and women empowerment.">
-  <meta name="keywords" content="NGO, Health, Education, Community, Cancer Support, AIDS Awareness, Thiruvarur, Tamil Nadu">
-  
+
+  <meta name="description"
+    content="Explore our impact initiatives in cancer support, AIDS awareness, eye camps, tree planting, and women empowerment.">
+  <meta name="keywords"
+    content="NGO, Health, Education, Community, Cancer Support, AIDS Awareness, Thiruvarur, Tamil Nadu">
+
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230F6E56%22/><text x=%2250%25%22 y=%2257%25%22 font-family=%22Inter, sans-serif%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>M</text></svg>">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230F6E56%22/><text x=%2250%25%22 y=%2257%25%22 font-family=%22Inter, sans-serif%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>M</text></svg>">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="style.css?v=1.2">
-  
+
   <!-- AOS (Animate on Scroll) CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
 
   <!-- Fallback Mode Banner -->
   <div id="fallback-banner" class="fallback-banner">
-    Running in Local Demo Mode (Database & Storage Not Connected). <a href="admin.html" style="text-decoration: underline; color: inherit;">Go to Admin Portal</a>
+    Running in Local Demo Mode (Database & Storage Not Connected). <a href="admin.html"
+      style="text-decoration: underline; color: inherit;">Go to Admin Portal</a>
   </div>
 
   <!-- STICKY NAVBAR -->
@@ -31,7 +37,7 @@
         <span class="logo-dot"></span>
         <span data-tr="brand_name">MY MOTHER TRUST</span>
       </a>
-      
+
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html" class="nav-link" data-tr="nav_home">Home</a></li>
@@ -42,7 +48,7 @@
           <li><a href="contact.html" class="nav-link" data-tr="nav_contact">Contact</a></li>
         </ul>
       </nav>
-      
+
       <div class="nav-actions">
         <button id="lang-toggle" class="lang-toggle">
           <i data-lucide="languages" style="width: 16px; height: 16px;"></i>
@@ -70,86 +76,96 @@
     <div class="container">
       <div class="section-header">
         <h2 data-tr="programs_title">Our Impact Programs</h2>
-        <p data-tr="programs_subtitle">Explore our structured initiatives targeted towards health care, child development, and local community aid.</p>
+        <p data-tr="programs_subtitle">Explore our structured initiatives targeted towards health care, child
+          development, and local community aid.</p>
       </div>
-      
+
       <div class="programs-tabs">
         <button class="tab-btn active" data-tab="health" data-tr="tab_health">Health Initiatives</button>
         <button class="tab-btn" data-tab="education" data-tr="tab_education">Education &amp; Skill</button>
         <button class="tab-btn" data-tab="community" data-tr="tab_community">Community Care</button>
       </div>
-      
+
       <!-- HEALTH TAB -->
       <div class="programs-grid tab-content active" id="tab-health" data-aos="fade-up">
         <!-- Card 1 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="heart-handshake"></i></div>
           <h3 data-tr="prog_health_c1_title">Cancer Support</h3>
-          <p data-tr="prog_health_c1_desc">Providing patient counselling, awareness programs, early screening camps, and rehabilitation support to cancer patients across rural regions.</p>
+          <p data-tr="prog_health_c1_desc">Providing patient counselling, awareness programs, early screening camps, and
+            rehabilitation support to cancer patients across rural regions.</p>
           <span class="status-badge status-active" data-tr="status_active">Active</span>
         </div>
         <!-- Card 2 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="activity"></i></div>
           <h3 data-tr="prog_health_c2_title">AIDS Awareness</h3>
-          <p data-tr="prog_health_c2_desc">Fostering destigmatization, treatment access support, and virus transmission prevention awareness campaigns for vulnerable communities.</p>
+          <p data-tr="prog_health_c2_desc">Fostering destigmatization, treatment access support, and virus transmission
+            prevention awareness campaigns for vulnerable communities.</p>
           <span class="status-badge status-expanding" data-tr="status_expanding">Expanding</span>
         </div>
         <!-- Card 3 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="stethoscope"></i></div>
           <h3 data-tr="prog_health_c3_title">Medical Camps</h3>
-          <p data-tr="prog_health_c3_desc">Organizing diagnostic camps, blood typing sessions, and free eye check-ups in tie-ups with district hospitals and expert doctors.</p>
+          <p data-tr="prog_health_c3_desc">Organizing diagnostic camps, blood typing sessions, and free eye check-ups in
+            tie-ups with district hospitals and expert doctors.</p>
           <span class="status-badge status-active" data-tr="status_active">Active</span>
         </div>
       </div>
-      
+
       <!-- EDUCATION TAB -->
       <div class="programs-grid tab-content" id="tab-education">
         <!-- Card 1 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="book-open"></i></div>
           <h3 data-tr="prog_edu_c1_title">Educational Materials</h3>
-          <p data-tr="prog_edu_c1_desc">Distributing school supplies, textbooks, uniforms, and structural aids to underprivileged children in government schools.</p>
+          <p data-tr="prog_edu_c1_desc">Distributing school supplies, textbooks, uniforms, and structural aids to
+            underprivileged children in government schools.</p>
           <span class="status-badge status-active" data-tr="status_active">Active</span>
         </div>
         <!-- Card 2 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="compass"></i></div>
           <h3 data-tr="prog_edu_c2_title">Career Counseling</h3>
-          <p data-tr="prog_edu_c2_desc">Conducting guidance seminars, motivational tracks, and skill paths for youth preparing for job markets and entrepreneurship.</p>
+          <p data-tr="prog_edu_c2_desc">Conducting guidance seminars, motivational tracks, and skill paths for youth
+            preparing for job markets and entrepreneurship.</p>
           <span class="status-badge status-coming" data-tr="status_coming">Coming Soon</span>
         </div>
         <!-- Card 3 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="scissors"></i></div>
           <h3 data-tr="prog_edu_c3_title">Vocational Training</h3>
-          <p data-tr="prog_edu_c3_desc">Providing professional courses including tailoring, nursing care, beauty lessons, and computer training to rural women.</p>
+          <p data-tr="prog_edu_c3_desc">Providing professional courses including tailoring, nursing care, beauty
+            lessons, and computer training to rural women.</p>
           <span class="status-badge status-expanding" data-tr="status_expanding">Expanding</span>
         </div>
       </div>
-      
+
       <!-- COMMUNITY TAB -->
       <div class="programs-grid tab-content" id="tab-community">
         <!-- Card 1 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="leaf"></i></div>
           <h3 data-tr="prog_comm_c1_title">Tree Planting</h3>
-          <p data-tr="prog_comm_c1_desc">Initiating green cover restoration drives, environmental preservation campaigns, and distributing free saplings to homes and public institutes.</p>
+          <p data-tr="prog_comm_c1_desc">Initiating green cover restoration drives, environmental preservation
+            campaigns, and distributing free saplings to homes and public institutes.</p>
           <span class="status-badge status-active" data-tr="status_active">Active</span>
         </div>
         <!-- Card 2 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="droplet"></i></div>
           <h3 data-tr="prog_comm_c2_title">Blood Donation</h3>
-          <p data-tr="prog_comm_c2_desc">Running blood donation camps and emergency donor registries in collaboration with Tiruvarur Government Medical College.</p>
+          <p data-tr="prog_comm_c2_desc">Running blood donation camps and emergency donor registries in collaboration
+            with Tiruvarur Government Medical College.</p>
           <span class="status-badge status-active" data-tr="status_active">Active</span>
         </div>
         <!-- Card 3 -->
         <div class="program-card">
           <div class="program-icon"><i data-lucide="shield"></i></div>
           <h3 data-tr="prog_comm_c3_title">Women Empowerment</h3>
-          <p data-tr="prog_comm_c3_desc">Supporting Self Help Groups (SHGs) formation, financial micro-literacy, and specific support networks for widows and disabled mothers.</p>
+          <p data-tr="prog_comm_c3_desc">Supporting Self Help Groups (SHGs) formation, financial micro-literacy, and
+            specific support networks for widows and disabled mothers.</p>
           <span class="status-badge status-expanding" data-tr="status_expanding">Expanding</span>
         </div>
       </div>
@@ -161,9 +177,10 @@
     <div class="container">
       <div class="section-header">
         <h2 data-tr="intervention_title">Key Areas of Intervention</h2>
-        <p data-tr="intervention_subtitle">A complete breakdown of our continuous efforts and social impact initiatives across districts.</p>
+        <p data-tr="intervention_subtitle">A complete breakdown of our continuous efforts and social impact initiatives
+          across districts.</p>
       </div>
-      
+
       <div class="intervention-grid" data-aos="fade-up">
         <!-- Item 1 -->
         <div class="intervention-card">
@@ -267,7 +284,8 @@
 
   <!-- FLOATING CONTROLS -->
   <div class="floating-actions">
-    <a href="https://wa.me/+918098040394" target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/+918098040394" target="_blank" class="float-btn float-whatsapp"
+      aria-label="Chat on WhatsApp">
       <i data-lucide="phone-call" style="margin-top: 2px;"></i>
     </a>
     <button class="float-btn float-backtop" id="btn-backtop" aria-label="Back to Top">
@@ -283,14 +301,16 @@
           <span class="logo-dot"></span>
           <span data-tr="brand_name">MY MOTHER TRUST</span>
         </div>
-        <p class="footer-desc" data-tr="footer_desc">We are committed to providing healthcare aid to patients suffering from cancer, AIDS, and viral diseases, along with educational support and ecological preservation in Thiruvarur, Tamil Nadu.</p>
+        <p class="footer-desc" data-tr="footer_desc">We are committed to providing healthcare aid to patients suffering
+          from cancer, AIDS, and viral diseases, along with educational support and ecological preservation in
+          Thiruvarur, Tamil Nadu.</p>
         <div class="footer-socials">
           <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
           <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
           <a href="#" class="social-link" aria-label="Youtube"><i data-lucide="youtube"></i></a>
         </div>
       </div>
-      
+
       <div>
         <h4 class="footer-title" data-tr="footer_quick_links">Quick Links</h4>
         <ul class="footer-links">
@@ -300,20 +320,22 @@
           <li><a href="gallery.html" data-tr="nav_gallery">Gallery</a></li>
           <li><a href="donate.html" data-tr="nav_donate">Donate</a></li>
           <li><a href="contact.html" data-tr="nav_contact">Contact</a></li>
-          <li><a href="admin.html" style="font-weight: 600; color: var(--accent);" data-tr="footer_admin_link">Admin Portal</a></li>
+          <li><a href="admin.html" style="font-weight: 600; color: var(--accent);" data-tr="footer_admin_link">Admin
+              Portal</a></li>
         </ul>
       </div>
-      
+
       <div>
         <h4 class="footer-title" data-tr="info_address">Office Address</h4>
         <div class="footer-address">
           <div class="footer-address-item">
             <i data-lucide="map-pin" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
-            <span data-tr="address_val">Door No 2/166A, Royal City Nagar, Pulivalam P.O., Thiruvarur District, Tamil Nadu - 610109</span>
+            <span data-tr="address_val">Door No 2/166A, Royal City Nagar, Pulivalam P.O., Thiruvarur District, Tamil
+              Nadu - 610109</span>
           </div>
           <div class="footer-address-item">
             <i data-lucide="phone" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
-            <span>+91 70942 02363</span>
+            <span>+91 80980 40394</span>
           </div>
           <div class="footer-address-item">
             <i data-lucide="mail" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
@@ -322,7 +344,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <div class="container">
         <p data-tr="copyright">© 2024 MY MOTHER TRUST. All Rights Reserved.</p>
@@ -335,17 +357,18 @@
 
   <!-- Supabase CDN Client -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  
+
   <!-- AOS (Animate on Scroll) JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
+
   <!-- Config File -->
   <script src="config.js"></script>
-  
+
   <!-- Main Logic -->
   <script src="script.js"></script>
 </body>
+
 </html>

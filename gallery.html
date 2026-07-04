@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery - MY MOTHER TRUST</title>
-  
-  <meta name="description" content="View photo galleries of blood donation drives, cancer awareness campaigns, eye camps, and planting activities.">
+
+  <meta name="description"
+    content="View photo galleries of blood donation drives, cancer awareness campaigns, eye camps, and planting activities.">
   <meta name="keywords" content="NGO, Gallery, Photos, Thiruvarur, Tamil Nadu, Activities">
-  
+
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230F6E56%22/><text x=%2250%25%22 y=%2257%25%22 font-family=%22Inter, sans-serif%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>M</text></svg>">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%230F6E56%22/><text x=%2250%25%22 y=%2257%25%22 font-family=%22Inter, sans-serif%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>M</text></svg>">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="style.css?v=1.2">
-  
+
   <!-- AOS (Animate on Scroll) CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
 
   <!-- Fallback Mode Banner -->
   <div id="fallback-banner" class="fallback-banner">
-    Running in Local Demo Mode (Database & Storage Not Connected). <a href="admin.html" style="text-decoration: underline; color: inherit;">Go to Admin Portal</a>
+    Running in Local Demo Mode (Database & Storage Not Connected). <a href="admin.html"
+      style="text-decoration: underline; color: inherit;">Go to Admin Portal</a>
   </div>
 
   <!-- STICKY NAVBAR -->
@@ -31,7 +36,7 @@
         <span class="logo-dot"></span>
         <span data-tr="brand_name">MY MOTHER TRUST</span>
       </a>
-      
+
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html" class="nav-link" data-tr="nav_home">Home</a></li>
@@ -42,7 +47,7 @@
           <li><a href="contact.html" class="nav-link" data-tr="nav_contact">Contact</a></li>
         </ul>
       </nav>
-      
+
       <div class="nav-actions">
         <button id="lang-toggle" class="lang-toggle">
           <i data-lucide="languages" style="width: 16px; height: 16px;"></i>
@@ -70,9 +75,10 @@
     <div class="container">
       <div class="section-header">
         <h2 data-tr="gallery_title">Photo Gallery</h2>
-        <p data-tr="gallery_subtitle">Moments from our medical camps, awareness rallies, environment drives and donations.</p>
+        <p data-tr="gallery_subtitle">Moments from our medical camps, awareness rallies, environment drives and
+          donations.</p>
       </div>
-      
+
       <!-- Filters -->
       <div class="gallery-filters">
         <button class="filter-btn active" data-filter="all" data-tr="filter_all">All</button>
@@ -81,7 +87,7 @@
         <button class="filter-btn" data-filter="eye" data-tr="filter_eye">Eye Camp</button>
         <button class="filter-btn" data-filter="sapling" data-tr="filter_sapling">Sapling Drive</button>
       </div>
-      
+
       <!-- Gallery Grid -->
       <div class="gallery-grid" id="gallery-grid" data-aos="fade-up">
         <!-- Will be filled by JavaScript -->
@@ -91,7 +97,8 @@
 
   <!-- FLOATING CONTROLS -->
   <div class="floating-actions">
-    <a href="https://wa.me/+918098040394" target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/+918098040394" target="_blank" class="float-btn float-whatsapp"
+      aria-label="Chat on WhatsApp">
       <i data-lucide="phone-call" style="margin-top: 2px;"></i>
     </a>
     <button class="float-btn float-backtop" id="btn-backtop" aria-label="Back to Top">
@@ -107,14 +114,16 @@
           <span class="logo-dot"></span>
           <span data-tr="brand_name">MY MOTHER TRUST</span>
         </div>
-        <p class="footer-desc" data-tr="footer_desc">We are committed to providing healthcare aid to patients suffering from cancer, AIDS, and viral diseases, along with educational support and ecological preservation in Thiruvarur, Tamil Nadu.</p>
+        <p class="footer-desc" data-tr="footer_desc">We are committed to providing healthcare aid to patients suffering
+          from cancer, AIDS, and viral diseases, along with educational support and ecological preservation in
+          Thiruvarur, Tamil Nadu.</p>
         <div class="footer-socials">
           <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
           <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
           <a href="#" class="social-link" aria-label="Youtube"><i data-lucide="youtube"></i></a>
         </div>
       </div>
-      
+
       <div>
         <h4 class="footer-title" data-tr="footer_quick_links">Quick Links</h4>
         <ul class="footer-links">
@@ -124,20 +133,22 @@
           <li><a href="gallery.html" data-tr="nav_gallery">Gallery</a></li>
           <li><a href="donate.html" data-tr="nav_donate">Donate</a></li>
           <li><a href="contact.html" data-tr="nav_contact">Contact</a></li>
-          <li><a href="admin.html" style="font-weight: 600; color: var(--accent);" data-tr="footer_admin_link">Admin Portal</a></li>
+          <li><a href="admin.html" style="font-weight: 600; color: var(--accent);" data-tr="footer_admin_link">Admin
+              Portal</a></li>
         </ul>
       </div>
-      
+
       <div>
         <h4 class="footer-title" data-tr="info_address">Office Address</h4>
         <div class="footer-address">
           <div class="footer-address-item">
             <i data-lucide="map-pin" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
-            <span data-tr="address_val">Door No 2/166A, Royal City Nagar, Pulivalam P.O., Thiruvarur District, Tamil Nadu - 610109</span>
+            <span data-tr="address_val">Door No 2/166A, Royal City Nagar, Pulivalam P.O., Thiruvarur District, Tamil
+              Nadu - 610109</span>
           </div>
           <div class="footer-address-item">
             <i data-lucide="phone" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
-            <span>+91 70942 02363</span>
+            <span>+91 80980 40394</span>
           </div>
           <div class="footer-address-item">
             <i data-lucide="mail" style="flex-shrink: 0; width: 18px; height: 18px;"></i>
@@ -146,7 +157,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <div class="container">
         <p data-tr="copyright">© 2024 MY MOTHER TRUST. All Rights Reserved.</p>
@@ -168,17 +179,18 @@
 
   <!-- Supabase CDN Client -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  
+
   <!-- AOS (Animate on Scroll) JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
+
   <!-- Config File -->
   <script src="config.js"></script>
-  
+
   <!-- Main Logic -->
   <script src="script.js"></script>
 </body>
+
 </html>
