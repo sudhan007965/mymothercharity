@@ -212,11 +212,19 @@ button, input, select, textarea {
   color: var(--primary);
 }
 
+.logo-img {
+  height: 2.8rem;
+  width: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.logo-img:hover {
+  transform: scale(1.02);
+}
+
 .logo-dot {
-  width: 12px;
-  height: 12px;
-  background-color: var(--accent);
-  border-radius: 50%;
+  display: none;
 }
 
 .nav-links {
@@ -1350,8 +1358,23 @@ textarea.form-control {
   margin-bottom: 1.5rem;
 }
 
+.logo-img-footer {
+  height: 4rem;
+  width: auto;
+  display: block;
+  background-color: var(--white);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+}
+
+.logo-img-footer:hover {
+  transform: scale(1.02);
+}
+
 .footer-logo .logo-dot {
-  background-color: var(--accent);
+  display: none;
 }
 
 .footer-desc {
